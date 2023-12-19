@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiwi's Inn | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <section id="bg">
+        <nav class="flex-space-bw">
+            <div class="logo flex-centered">
+                <img src="assets/kiwi-inn-logo.png" alt="logo-img">
+            </div>
+            <ul id="nav-list" class="flex-centered">
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./about.html">ABOUT</a></li>
+                <li><a href="./creator.html">CREATOR</a></li>
+            </ul>
+            <img src="assets/head-logo.png" alt="">
+        </nav>
+        <header>
+            <div id="about-web-page" class="stroke">
+                <p>
+                    DISCOVER SOMETHING DELICIOUS DAILY!
+                </p>
+            </div>
+            <div class="search-bar flex-centered">
+                <input type="text" class="search" placeholder="I would like to eat......">
+                <img src="assets/search-interface-symbol.png" alt="search" id="search-click">
+            </div>
+        </header>
+        <section class="home-page flex-space-bw">
+            <div id="intro">
+                <h1 class="title-case" id="title-1">KIWI'S INN</h1>
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam cumque impedit inventore quia
+                    facere.
+                    Provident voluptates, laboriosam ea consectetur, vero ad at quas rerum dolores fugit deleniti nam
+                    amet
+                    natus!</h3>
+                <button id="random-dish">Get my Daily Dish!</button>
+            </div>
+        </section>
+        <section class="random-dish">
+            <h1 class="title-case" id="title-2">YOUR DAILY DISH!</h1>
+            <div class="rand-img">
+                <img id = "random-image"src="assets/trial-img.jpg" alt="">
+
+                <div id="data" class="flex-centered">
+                    <div id="ingredients" class="flex-centered">
+                        <img src="assets/ingredients.png" alt="">
+                    </div>
+                    <div id="recipe" class="flex-centered">
+                        <img src="assets/recipe.png" alt="">
+                    </div>
+                </div>
+        </section>
+        <section class="dishes-table">
+            <h1 class="title-case" id="title-3">YOUR SEARCH <span id="red" class="title-case">RESULTS:</span> </h1>
+            <div id="table">
+                <div class="dish" id="dish-1">
+                    <img src="assets/trial-img.jpg" alt="" >
+                </div>
+                <div class="dish" id="dish-2">
+                    <img src="assets/trial-img.jpg" alt="" >
+                </div>
+                <div class="dish" id="dish-3">
+                    <img src="assets/trial-img.jpg" alt="" >
+                </div>
+                <div class="dish" id="dish-4"><img src="assets/trial-img.jpg" alt="" ></div>
+                <div class="dish" id="dish-5"><img src="assets/trial-img.jpg" alt="" ></div>
+                <div class="dish" id="dish-6"><img src="assets/trial-img.jpg" alt="" ></div>
+            </div>        
+        </section>
+        <img src="assets/chef.png" alt="" id="chef">
+        <footer class="flex-space-bw">
+            <div id="footer-left">
+                <h1>KIWI's INN</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam cumque impedit inventore quia facere.
+                    Provident voluptates, laboriosam ea consectetur, vero ad at quas rerum dolores fugit deleniti nam
+                    amet
+                    natus!</p>
+            </div>
+            <div id="footer-right">
+                <div id="footer-right-top">
+                    <div class="credits">
+                        <h3>Designed and Developed By: <br> <span id="author">Shubham Thakur</span></h3>
+                    </div>
+                    <div class="logo">
+                        <img src="assets/kiwi-inn-logo.png" alt="">
+                    </div>
+                </div>
+                <div id="footer-right-bottom">
+                    <p>Follow me here</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <div id="ingredients-page">
+        <div class="page-right-ing">
+        </div>
+        <div class="page-left stroke">
+            <h3>INGREDIENTS</h3>
+            <ol id="ingredient-list">
+            </ol>
+        </div>
+        <button class="close" onclick="closePopUp('ingredients-page')">
+            <img src="assets/cross.png" alt="">
+        </button>
+    </div>
+    <div id="recipe-page">
+        <div class="page-right-recipe">
+        </div>
+        <div class="page-left stroke">
+            <h3>RECIPE</h3>
+            <div id="recipe-list">
+            </div>
+        </div>
+        <button class="close" onclick="closePopUp('recipe-page')">
+            <img src="assets/cross.png" alt="">
+        </button>
+    </div>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
