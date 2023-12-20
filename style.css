@@ -253,6 +253,7 @@ footer {
 .dishes-table{
     margin: 3vw;
     padding: 2vw;
+    display: none;
 }
 #table{
     display: grid;
@@ -267,12 +268,14 @@ footer {
 }
 .dish{
     height: 20vw;
+    margin-bottom: 5vw;
+    border-radius: 10px;
 }
 .dish img{
     width: 100%;
     border-radius: 10px;
 }
-.dish img:hover{
+.dish:hover{
     box-shadow: 0.2vw 0.2vw 1vw rgb(0, 0, 0);
     cursor: pointer;
     transform: scale(1.1);
@@ -309,4 +312,9 @@ footer {
 a{
     color: white;
     text-decoration: none;
+}
+.food-desc{
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 900;
 }
