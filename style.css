@@ -63,7 +63,7 @@ nav p {
     letter-spacing: 0.25vw;
 }
 nav img{
-    width: 100px;
+    width: 10vw;
 }
 
 #about-web-page {
@@ -347,4 +347,33 @@ a{
     text-align: center;
     font-size: 1.5vw;
     font-weight: 900;
+}
+#footer-end{
+    width: 100%;
+    height: 3vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-url{
+    text-decoration: underline;
+}
+#menu{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3vw;
+    padding-top: 0;
+    top: 15vw;
+    right: 0.5vw;
+    background-color: black;
+    border-radius: 0px 0px 10px 10px;
+    transition: display 3s ease;
+}
+#menu img{
+    width: 7vw;
+    margin-top: 3vw;
 }

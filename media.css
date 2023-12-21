@@ -46,9 +46,13 @@
         font-size: 4vw;
         padding: 2vw;
     }
+    nav img{
+        width: 20vw;
+    }
     .rand-img img {
         width: 82vw;
     }
+    
     #data {
         bottom: 5px;
         right: 3px;
@@ -94,8 +98,8 @@
     }
     #ingredient-list, #recipe-list{
         width: 45vw;
-        padding-left: 3vw;
-        font-size: 2.5vw;
+        padding-left: 8vw;
+        font-size: 2.8vw;
         border-radius: 10px;
     }
     .desc{
@@ -124,4 +128,27 @@
     #footer-right-bottom p{
         font-size: 3.4vw;
     }
+    #footer-end{
+        height: 15vw;
+    }
+    #footer-end p{
+    font-size: 2.8vw;
+    text-align: center;
+    }
+    .creator-image img{
+        width: 47vw;
+    }
+    .creator-image h3{
+        font-size: 5vw;
+    }
+    .socials-img{
+        width: 9vw;
+    }
+    #socials-icons{
+        width: 40vw;
+    }
+    .page-left h3 {
+        font-size: 7vw;
+    }
+
 }

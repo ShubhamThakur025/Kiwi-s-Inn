@@ -9,6 +9,19 @@ let recipePage = document.getElementById('recipe-page')
 let close = document.querySelector('.close')
 let getDish = document.getElementById('random-dish')
 
+let bars = document.querySelector('.bars')
+let flagForMenu = 0
+
+bars.onclick = () =>{
+    if(flagForMenu == 0){
+    document.getElementById('menu').style.display = 'flex'
+    flagForMenu = 1
+    }
+    else{
+        flagForMenu = 0
+        document.getElementById('menu').style.display = 'none'
+    }
+}
 ingredients.onclick = () => {
     showModal('ingredients')
 }
