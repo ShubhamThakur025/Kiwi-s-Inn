@@ -401,7 +401,8 @@ a{
     text-align: center;
 }
 #search-right img{
-    width: 100%;
+    width: 82%;
+    margin: auto;
 }
 #search-left{
     display: flex;

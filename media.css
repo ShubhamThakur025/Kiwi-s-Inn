@@ -1,125 +1,158 @@
-@media (orientation: portrait){
-    .bars{
+@media (orientation: portrait) {
+    .bars {
         display: block;
         margin-right: 2vw;
     }
-    #nav-list{
+
+    #nav-list {
         display: none;
     }
-    nav{
+
+    nav {
         height: 15vw;
     }
-    #about-web-page{
+
+    #about-web-page {
         font-size: 7vw;
         margin: 3vw;
     }
-    input{
+
+    input {
         width: 76vw;
         height: 8vw;
         font-size: 4vw;
         padding: 2vw;
     }
-    #search-click{
+
+    #search-click {
         width: 6vw;
     }
+
     .home-page {
         background-image: url('assets/bg-mob.png');
         background-size: cover;
         padding: 3vw;
         margin: auto;
     }
-    .title-case{
+
+    .title-case {
         font-size: 14vw;
     }
-    #intro{
+
+    #intro {
         text-align: center;
         width: 100vw;
     }
+
     #intro h3 {
         width: 50%;
         margin: auto;
         font-size: 3vw;
         margin-top: 5vw;
     }
+
     #random-dish {
         margin: 63vw 0vw 0vw 0vw;
         font-size: 4vw;
         padding: 2vw;
     }
-    .credit-block{
+
+    .credit-block {
         margin-bottom: 7vw;
     }
-    #ingredients-search li{
+
+    #ingredients-search li {
         font-size: 2.3vw;
     }
-    #recipe-search{
+
+    #recipe-search {
         font-size: 2.3vw;
     }
-    nav img{
+
+    nav img {
         width: 20vw;
     }
+
     .rand-img img {
         width: 82vw;
     }
-    
+
     #data {
         bottom: 40px;
         right: 3px;
     }
-    #dishName{
+
+    #dishName {
         font-size: 4vw;
     }
-    #data div{
+
+    #data div {
         height: 7vw;
         width: 7vw;
         padding: 3vw;
     }
+
     #data img {
         width: 5.5vw;
-    
+
     }
-    #footer-left{
+
+    #footer-left {
         margin: 2vw;
     }
-    #footer-left p{
+
+    #footer-left p {
         font-size: 2.7vw;
     }
-    #footer-right-top{
+
+    #footer-right-top {
         flex-direction: column;
-        
+
     }
-    .credits{
+
+    .credits {
         font-size: 3.8vw;
     }
-    #author{
+
+    #author {
         font-size: 3vw;
         margin-top: 2vw;
     }
-    #logo-img{
+
+    #logo-img {
         margin-top: 2vw;
     }
-    #ingredients-page, #recipe-page{
-        height: 55vh;
+
+    #ingredients-page,
+    #recipe-page {
+        height: 70vh;
         top: 27vw;
         flex-direction: column;
         align-items: center;
-        
+
     }
-    .meal-img{
-        width: 44vw;
+
+    .meal-img {
+        width: 63vw;
     }
-    #ingredient-list, #recipe-list{
-        width: 45vw;
+
+    #ingredient-list,
+    #recipe-list {
+        font-size: 3vw;
+        width: 65vw;    
+        height: 44vw;
         padding-left: 8vw;
-        font-size: 2.8vw;
         border-radius: 10px;
     }
-    .desc{
+
+    .desc {
         font-size: 3vw;
     }
-    .close{
+
+    .close {
         width: 7vw;
     }
+
     #table {
         display: flex;
         flex-direction: column;
@@ -128,39 +161,81 @@
         height: 50vh;
         padding: 6vw;
     }
-    .dish{
+
+    .dish {
         width: 45vw;
         height: 45vw;
         margin: 2vw;
     }
+
     .food-desc {
         font-size: 3vw;
         font-weight: 1000;
     }
-    #footer-right-bottom p{
+
+    #footer-right-bottom p {
         font-size: 3.4vw;
     }
-    #footer-end{
+
+    #footer-end {
         height: 15vw;
     }
-    #footer-end p{
-    font-size: 2.8vw;
-    text-align: center;
+
+    #footer-end p {
+        font-size: 2.8vw;
+        text-align: center;
     }
-    .creator-image img{
+
+    .creator-image img {
         width: 47vw;
     }
-    .creator-image h3{
+
+    .creator-image h3 {
         font-size: 5vw;
     }
-    .socials-img{
+
+    .socials-img {
         width: 9vw;
     }
-    #socials-icons{
+
+    #socials-icons {
         width: 40vw;
     }
+
     .page-left h3 {
         font-size: 7vw;
     }
+
+    #search-right img {
+        width: 68vw;
+        margin: auto;
+    }
+
+    #search-details-page {
+        flex-direction: column;
+    }
+    #search-left div{
+        font-size: 3vw;
+        width: 65vw;    
+        height: 44vw;
+    }
+    .close-2 {
+        position: absolute;
+        top: 3vw;
+        right: 5vw;
+        background-color: #ffffff00;
+        border: none;
+        width: 3vw;
+        cursor: pointer;
+    }
+
+    .close-2 img {
+        width: 8vw;
+    }
+
+    #head {
+        font-size: 4vw;
+    }
+
 
 }
