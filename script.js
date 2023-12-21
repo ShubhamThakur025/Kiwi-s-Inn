@@ -67,7 +67,7 @@ let serveOnTheTable = (dishes) => {
         table.innerHTML +=
             `
         <div class="dish">
-            <img src="${dish.strMealThumb}" alt="" >
+            <img src="${dish.strMealThumb}" alt="" id = "${dish.idMeal}">
             <p class = "food-desc">${dish.strMeal}</p>
         </div>        
         `
