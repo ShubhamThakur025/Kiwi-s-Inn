@@ -42,7 +42,7 @@
         margin-top: 5vw;
     }
     #random-dish {
-        margin: 55vw 0vw 0vw 0vw;
+        margin: 63vw 0vw 0vw 0vw;
         font-size: 4vw;
         padding: 2vw;
     }
@@ -54,8 +54,11 @@
     }
     
     #data {
-        bottom: 5px;
+        bottom: 40px;
         right: 3px;
+    }
+    #dishName{
+        font-size: 4vw;
     }
     #data div{
         height: 7vw;

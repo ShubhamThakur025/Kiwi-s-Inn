@@ -24,11 +24,18 @@ a img{
     width: 3vw;
     margin-left: 1vw;
 }
-.about-container{
+.about-container{    
     width: 70vw;
-    margin: auto;
-    margin-top: 5vw;
+    margin: 5vw auto;
     background-color: #ffc060;
     padding: 2vw;
     border-radius: 10px;
+    height: 80vh;
+}
+#intro-section{
+    height: 80vh;
+}
+.credit-block{
+    width: fit-content;
+    height: fit-content;
 }

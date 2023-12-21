@@ -41,12 +41,7 @@ ul {
     padding: 0.5vw;
     cursor: pointer;
 }
-#nav-list li:hover{
-    box-shadow: 0px 0.2vw #FFA41B;
-    transition: box-shadow 0.3s ease;
-    transform: scale(1.08);
-    color: #FFA41B;
-}
+
 
 .logo img {
     width: 45px;
@@ -163,7 +158,7 @@ input::placeholder {
 
 #data {
     position: absolute;
-    bottom: 0;
+    bottom: 3vw;
     right: 0;
 }
 
@@ -177,7 +172,12 @@ input::placeholder {
     margin: 1vw;
     cursor: pointer;
 }
-
+#dishName{
+    font-size: 1.5vw;
+    text-align: center;
+    font-weight: 900;
+    margin: 1vw;
+}
 #data img {
     width: 2.5vw;
 }
@@ -235,6 +235,7 @@ footer {
     padding: 4vw;
     border-radius: 20px;
     justify-content: space-around;
+    box-shadow: .2vw .2vw 1.5vw black;
 }
 #searchModal{
     width: 80vw;
@@ -281,6 +282,8 @@ footer {
     width: 100%;
 }
 .dishes-table{
+    text-align: center;
+    border-radius: 10px;
     margin: 3vw;
     padding: 2vw;
     display: none;
@@ -336,11 +339,14 @@ footer {
     color: #f09000;
     font-size: inherit;
 }
+.credit-block{
+    margin-bottom: 2vw;
+}
 #random-image{
     box-shadow: 0.2vw 0.2vw 2vw rgb(54, 54, 54);
 }
 a{
-    color: white;
+    color: inherit;
     text-decoration: none;
 }
 .food-desc{
@@ -387,6 +393,7 @@ a{
     border-radius: 20px;
     justify-content: space-around;
     display: none;
+    box-shadow: .2vw .2vw 1.5vw black;
 }
 #search-right{
     width: 45vw;
@@ -399,14 +406,23 @@ a{
 #search-left{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     width: 40%;
-    
+    height: 80%;
 }
 #search-left div{
     background-color: #ffc060;
-    height: 48%;   
+    height: 20vw;   
     overflow: auto;
+    margin: 2vw;
+    padding: 2vw;
+
+}
+#nav-list li:hover{
+    box-shadow: 0px 0.2vw #FFA41B;
+    transition: box-shadow 0.3s ease;
+    transform: scale(1.05);
+    color: #FFA41B;
 }
 #head{
     font-size: 1.8vw;    

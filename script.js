@@ -3,12 +3,15 @@ let pageRightRecipe = document.querySelector('.page-right-recipe')
 let pageRightIng = document.querySelector('.page-right-ing')
 let instrcutionList = document.getElementById('ingredient-list')
 let recipeList = document.getElementById('recipe-list')
+let randDishName = document.getElementById('dishName')
 
 let searchBox = document.querySelector('.search')
 let searchBtn = document.getElementById('search-click')
 
 let dishesTable = document.querySelector('.dishes-table')
 let table = document.getElementById('table')
+
+
 fetch('https://www.themealdb.com/api/json/v1/1/random.php')
     .then(response => {
         console.log(response)
@@ -17,20 +20,26 @@ fetch('https://www.themealdb.com/api/json/v1/1/random.php')
     .then(result => {
         console.log(result.meals[0])
         randomImage.setAttribute('src', result.meals[0]['strMealThumb'])
+        randDishName.innerText = result.meals[0]['strMeal']
         updateIngredients(result)
         updateRecipe(result)
-
-
+    })
+    .catch((error) =>{
+        alert("Something wrong occurred!")
     })
 
 let searchResults = (searchItem) => {
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${searchItem}`)
         .then(response => response.json())
-        .then((result) => {            
+        .then((result) => {    
+            console.log("Hey")        
             serveOnTheTable(result.meals)
         })
-}
-
+        .catch((error) => {
+            alert("No Item found")
+        }
+        )
+    }
 
 let updateIngredients = (result) => {
     for (let i = 1; i <= 20; i++) {

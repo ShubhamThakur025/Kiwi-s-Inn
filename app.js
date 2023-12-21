@@ -67,13 +67,13 @@ let showSearchModal = (result) => {
      </div>
      <div id="search-left">
          <div id="ingredients-search"><span id="head" class="stroke">INGREDIENTS</span><br></div>
-         <div id="recipe-search"><span id="head" class="stroke">RECIPE</span><br></div>
+         <div id="recipe-search"><span id="head" class="stroke">RECIPE</span><br>${result.meals[0][`strInstructions`]}</div>
      </div>
     `;
 
     let ingrdList = document.getElementById('ingredients-search');
     for (let i = 1; i <= 20; i++) {
-        if (result.meals[0][`strIngredient${i}`] !== '') {
+        if (result.meals[0][`strIngredient${i}`] != "") {
             ingrdList.innerHTML +=
                 `<li>${result.meals[0][`strIngredient${i}`]}</li>`;
         } else {
@@ -84,8 +84,7 @@ let showSearchModal = (result) => {
     pr.style.display = 'flex';
     let closeButton = pr.querySelector('.close-2');
     if (closeButton) {
-        closeButton.onclick = () => {
-            console.log('HeyBoy');
+        closeButton.onclick = () => { 
             pr.style.display = 'none';
         };
     }
