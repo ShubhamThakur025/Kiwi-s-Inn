@@ -107,7 +107,7 @@ input::placeholder {
 }
 
 .home-page {
-    background-image: url('assets/bg.png');
+    background-image: url('../assets/bg.png');
     background-size: cover;
     padding: 3vw;
 }

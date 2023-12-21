@@ -1,3 +1,4 @@
+//accessing the needed DOM elements
 let randomImage = document.getElementById('random-image')
 let pageRightRecipe = document.querySelector('.page-right-recipe')
 let pageRightIng = document.querySelector('.page-right-ing')
@@ -11,14 +12,12 @@ let searchBtn = document.getElementById('search-click')
 let dishesTable = document.querySelector('.dishes-table')
 let table = document.getElementById('table')
 
-
+//fetching the API for random dish
 fetch('https://www.themealdb.com/api/json/v1/1/random.php')
     .then(response => {
-        console.log(response)
         return response.json()
     })
     .then(result => {
-        console.log(result.meals[0])
         randomImage.setAttribute('src', result.meals[0]['strMealThumb'])
         randDishName.innerText = result.meals[0]['strMeal']
         updateIngredients(result)
@@ -28,11 +27,11 @@ fetch('https://www.themealdb.com/api/json/v1/1/random.php')
         alert("Something wrong occurred!")
     })
 
+//to trigger the search
 let searchResults = (searchItem) => {
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${searchItem}`)
         .then(response => response.json())
-        .then((result) => {    
-            console.log("Hey")        
+        .then((result) => {     
             serveOnTheTable(result.meals)
         })
         .catch((error) => {
@@ -41,6 +40,7 @@ let searchResults = (searchItem) => {
         )
     }
 
+//to add the ingredients in the modal
 let updateIngredients = (result) => {
     for (let i = 1; i <= 20; i++) {
         if (result.meals[0][`strIngredient${i}`] != '') {
@@ -59,6 +59,7 @@ let updateIngredients = (result) => {
     `
 }
 
+//to add the recipe in the modal
 let updateRecipe = (result) => {
     pageRightRecipe.innerHTML =
         `
@@ -69,10 +70,10 @@ let updateRecipe = (result) => {
     recipeList.innerHTML = result.meals[0][`strInstructions`]
 }
 
+//to display the fetched dishes on the screen
 let serveOnTheTable = (dishes) => {
     dishesTable.style.display = 'block'
     dishes.forEach(dish => {
-        console.log(dish)
         table.innerHTML +=
             `
         <div class="dish">
@@ -84,9 +85,9 @@ let serveOnTheTable = (dishes) => {
     });
 }
 
+//to make the search-buttton functional
 searchBtn.onclick = () => {
     if (searchBox.value) {
-        console.log(searchBox.value)
         searchResults(searchBox.value)
     }
     else {

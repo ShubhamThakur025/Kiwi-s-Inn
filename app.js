@@ -1,3 +1,4 @@
+//needed DOM elements
 let ingredients = document.getElementById('ingredients')
 let recipe = document.getElementById('recipe')
 let blurredBg = document.getElementById('bg')
@@ -13,7 +14,7 @@ let bars = document.querySelector('.bars')
 let flagForMenu = 0
 
 
-
+//event listener for the menu button in portrait mode
 bars.onclick = () => {
     if (flagForMenu == 0) {
         document.getElementById('menu').style.display = 'flex'
@@ -24,37 +25,43 @@ bars.onclick = () => {
         document.getElementById('menu').style.display = 'none'
     }
 }
+
+//to get the modal of ingredients
 ingredients.onclick = () => {
     showModal('ingredients')
 }
 
+
+//to get the modal of recipe
 recipe.onclick = () => {
     showModal('recipe')
 }
 
+//event-listener for the random dish
 getDish.onclick = () => {
     document.querySelector('#title-2').scrollIntoView({ behavior: 'smooth' })
 }
 
+
+//to make the close button of the modal functional
 let closePopUp = (popupId) => {
     let popup = document.getElementById(popupId)
     popup.style.display = 'none'
     blurredBg.style.filter = 'none'
     blurredBg.style.pointerEvents = 'all'
-    console.log(blurredBg.style.pointerEvents)
 }
 
+//to toggle bw ingredients and the recipe modal
 let showModal = (type) => {
     type == 'ingredients' ? ingredientsPage.style.display = 'flex' : recipePage.style.display = 'flex'
     blurredBg.style.filter = 'blur(5px)'
     blurredBg.style.pointerEvents = 'none'
 }
 
+//to display the modal for the search items
 let showSearchModal = (result) => {
-    console.log(result);
 
     let pr = document.getElementById('search-details-page');
-    console.log(pr);
 
     pr.innerHTML =
         `
@@ -90,15 +97,13 @@ let showSearchModal = (result) => {
     }
 };
 
-
-
-
+//event delegation to handle the grids of the dishes
 table.addEventListener('click', (event) => {
-    console.log("Hey")
-    console.log(event.target.id)
     lookForDetails(event.target.id)
 
 })
+
+//to call the API for details
 let lookForDetails = (id) => {
     fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
         .then(response => {
