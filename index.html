@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiwi's Inn | Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 
@@ -14,13 +15,18 @@
         <nav class="flex-space-bw">
             <div class="logo flex-centered">
                 <img src="assets/kiwi-inn-logo.png" alt="logo-img">
-            </div>
+            </div>            
             <ul id="nav-list" class="flex-centered">
                 <li><a href="./index.html">HOME</a></li>
                 <li><a href="./about.html">ABOUT</a></li>
                 <li><a href="./creator.html">CREATOR</a></li>
             </ul>
             <img src="assets/head-logo.png" alt="">
+            <div class="bars">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </nav>
         <header>
             <div id="about-web-page" class="stroke">
@@ -77,7 +83,7 @@
                         <h3>Designed and Developed By: <br> <span id="author">Shubham Thakur</span></h3>
                     </div>
                     <div class="logo">
-                        <img src="assets/kiwi-inn-logo.png" alt="">
+                        <img id="logo-img" src="assets/kiwi-inn-logo.png" alt="">
                     </div>
                 </div>
                 <div id="footer-right-bottom">
@@ -103,8 +109,7 @@
         </div>
         <div class="page-left stroke">
             <h3>RECIPE</h3>
-            <div id="recipe-list">
-            </div>
+            <div id="recipe-list"></div>
         </div>
         <button class="close" onclick="closePopUp('recipe-page')">
             <img src="assets/cross.png" alt="">

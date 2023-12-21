@@ -1,0 +1,127 @@
+@media (orientation: portrait){
+    .bars{
+        display: block;
+        margin-right: 2vw;
+    }
+    #nav-list{
+        display: none;
+    }
+    nav{
+        height: 15vw;
+    }
+    #about-web-page{
+        font-size: 7vw;
+        margin: 3vw;
+    }
+    input{
+        width: 76vw;
+        height: 8vw;
+        font-size: 4vw;
+        padding: 2vw;
+    }
+    #search-click{
+        width: 6vw;
+    }
+    .home-page {
+        background-image: url('assets/bg-mob.png');
+        background-size: cover;
+        padding: 3vw;
+        margin: auto;
+    }
+    .title-case{
+        font-size: 14vw;
+    }
+    #intro{
+        text-align: center;
+        width: 100vw;
+    }
+    #intro h3 {
+        width: 50%;
+        margin: auto;
+        font-size: 3vw;
+        margin-top: 5vw;
+    }
+    #random-dish {
+        margin: 55vw 0vw 0vw 0vw;
+        font-size: 4vw;
+        padding: 2vw;
+    }
+    .rand-img img {
+        width: 82vw;
+    }
+    #data {
+        bottom: 5px;
+        right: 3px;
+    }
+    #data div{
+        height: 7vw;
+        width: 7vw;
+        padding: 3vw;
+    }
+    #data img {
+        width: 5.5vw;
+    
+    }
+    #footer-left{
+        margin: 2vw;
+    }
+    #footer-left p{
+        font-size: 2.7vw;
+    }
+    #footer-right-top{
+        flex-direction: column;
+        
+    }
+    .credits{
+        font-size: 3.8vw;
+    }
+    #author{
+        font-size: 3vw;
+        margin-top: 2vw;
+    }
+    #logo-img{
+        margin-top: 2vw;
+    }
+    #ingredients-page, #recipe-page{
+        height: 55vh;
+        top: 27vw;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .meal-img{
+        width: 44vw;
+    }
+    #ingredient-list, #recipe-list{
+        width: 45vw;
+        padding-left: 3vw;
+        font-size: 2.5vw;
+        border-radius: 10px;
+    }
+    .desc{
+        font-size: 3vw;
+    }
+    .close{
+        width: 7vw;
+    }
+    #table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: auto;
+        height: 50vh;
+        padding: 6vw;
+    }
+    .dish{
+        width: 45vw;
+        height: 45vw;
+        margin: 2vw;
+    }
+    .food-desc {
+        font-size: 3vw;
+        font-weight: 1000;
+    }
+    #footer-right-bottom p{
+        font-size: 3.4vw;
+    }
+}
