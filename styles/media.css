@@ -29,7 +29,7 @@
     }
 
     .home-page {
-        background-image: url('assets/bg-mob.png');
+        background-image: url('../assets/bg-mob.png');
         background-size: cover;
         padding: 3vw;
         margin: auto;

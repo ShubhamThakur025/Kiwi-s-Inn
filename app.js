@@ -61,9 +61,9 @@ let showModal = (type) => {
 //to display the modal for the search items
 let showSearchModal = (result) => {
 
-    let pr = document.getElementById('search-details-page');
+    let searchDetailsPage = document.getElementById('search-details-page');
 
-    pr.innerHTML =
+    searchDetailsPage.innerHTML =
         `
      <button class="close-2">
          <img src="assets/cross.png" alt="">
@@ -88,11 +88,11 @@ let showSearchModal = (result) => {
         }
     }
 
-    pr.style.display = 'flex';
-    let closeButton = pr.querySelector('.close-2');
+    searchDetailsPage.style.display = 'flex';
+    let closeButton = searchDetailsPage.querySelector('.close-2');
     if (closeButton) {
         closeButton.onclick = () => { 
-            pr.style.display = 'none';
+            searchDetailsPage.style.display = 'none';
         };
     }
 };

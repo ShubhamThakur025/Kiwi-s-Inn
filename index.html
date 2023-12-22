@@ -12,27 +12,30 @@
 
 <body>
     <section id="bg">
+        <!-- The Navigation Bar -->
         <nav class="flex-space-bw">
             <div class="logo flex-centered">
-                <img src="assets/kiwi-inn-logo.png" alt="logo-img">
+                <img src="./assets/kiwi-inn-logo.png" alt="logo-img">
             </div>            
             <ul id="nav-list" class="flex-centered">
                 <li><a href="./index.html">HOME</a></li>
                 <li><a href="./about.html">ABOUT</a></li>
                 <li><a href="./creator.html">CREATOR</a></li>
             </ul>
-            <img src="assets/head-logo.png" alt="">
+            <img src="./assets/head-logo.png" alt="">
             <div class="bars">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
             <div id="menu">
-                <a href="./index.html"><img src="assets/Home.png" alt=""></a>
-                <a href="./about.html"><img src="assets/about.png" alt=""></a>
-                <a href="./creator.html"><img src="assets/creator.png" alt=""></a>
+                <a href="./index.html"><img src="./assets/Home.png" alt=""></a>
+                <a href="./about.html"><img src="./assets/about.png" alt=""></a>
+                <a href="./creator.html"><img src="./assets/creator.png" alt=""></a>
             </div>
         </nav>
+        
+        <!-- The Home Page -->
         <header>
             <div id="about-web-page" class="stroke">
                 <p>
@@ -41,7 +44,7 @@
             </div>
             <div class="search-bar flex-centered">
                 <input type="text" class="search" placeholder="I would like to eat......">
-                <img src="assets/search-interface-symbol.png" alt="search" id="search-click">
+                <img src="./assets/search-interface-symbol.png" alt="search" id="search-click">
             </div>
         </header>
         <section class="home-page flex-space-bw">
@@ -52,26 +55,31 @@
                 <button id="random-dish">Get my Daily Dish!</button>
             </div>
         </section>
+
+        <!-- Random Dish Section -->
         <section class="random-dish">
             <h1 class="title-case" id="title-2">YOUR DAILY DISH!</h1>
             <div class="rand-img">
-                <img id = "random-image"src="assets/trial-img.jpg" alt="">
+                <img id = "random-image"src="" alt="random-dish-img">
 
                 <div id="data" class="flex-centered">
                     <div id="ingredients" class="flex-centered">
-                        <img src="assets/ingredients.png" alt="">
+                        <img src="./assets/ingredients.png" alt="">
                     </div>
                     <div id="recipe" class="flex-centered">
-                        <img src="assets/recipe.png" alt="">
+                        <img src="./assets/recipe.png" alt="">
                     </div>
                 </div>
                 <p id="dishName"></p>
         </section>
+
+        <!-- The search results -->
         <section class="dishes-table">
             <h1 class="title-case" id="title-3">YOUR SEARCH <span id="red" class="title-case">RESULTS:</span> </h1>
             <div id="table"></div>        
         </section>
-        <img src="assets/chef.png" alt="" id="chef">
+        
+        <!-- Footer -->
         <footer class="flex-space-bw">
             <div id="footer-left">
                 <h1>KIWI's INN</h1>
@@ -83,7 +91,7 @@
                         <h3>Designed and Developed By: <br> <span id="author">Shubham Thakur</span></h3>
                     </div>
                     <div class="logo">
-                        <img id="logo-img" src="assets/kiwi-inn-logo.png" alt="">
+                        <img id="logo-img" src="./assets/kiwi-inn-logo.png" alt="">
                     </div>
                 </div>
                 <div id="footer-right-bottom">
@@ -96,6 +104,8 @@
             <p>API support by <a target="_blank" class='footer-url' href="https://www.themealdb.com/">themealdb.com</a>. We own none of the assets used here. View credits <a class='footer-url' href="./about.html" target="_blank"> here</a></p>
         </div>
     </section>
+
+    <!-- Modal for ingredients page -->
     <div id="ingredients-page">
         <div class="page-right-ing">
         </div>
@@ -105,9 +115,11 @@
             </ol>
         </div>
         <button class="close" onclick="closePopUp('ingredients-page')">
-            <img src="assets/cross.png" alt="">
+            <img src="./assets/cross.png" alt="">
         </button>
     </div>
+
+    <!-- Modal for Recipe page -->
     <div id="recipe-page">
         <div class="page-right-recipe">
         </div>
@@ -116,16 +128,18 @@
             <div id="recipe-list"></div>
         </div>
         <button class="close" onclick="closePopUp('recipe-page')">
-            <img src="assets/cross.png" alt="">
+            <img src="./assets/cross.png" alt="">
         </button>
     </div>
+
+    <!-- Modal for search items -->
     <div id="search-details-page">
         <button class="close-2">
-            <img src="assets/cross.png" alt="">
+            <img src="./assets/cross.png" alt="">
         </button>
         <div id="search-right">
-            <img src="assets/trial-img.jpg" alt="">
-            <p>Shubham's dish</p> 
+            <img src="" alt="">
+            <p></p> 
         </div>
         <div id="search-left">
             <div id="ingredients-search"><span id="head" class="stroke">INGREDIENTS</span><br></div>
